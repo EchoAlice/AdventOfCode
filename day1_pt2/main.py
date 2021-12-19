@@ -1,32 +1,21 @@
 if __name__ == "__main__":
     
     #Read text file into numbers within an array
-    with open("input_test.txt") as values:
+    # Change input_test.txt to input.txt!
+    with open("input.txt") as values:
         depths = values.readlines()
-            
+    
+    depth_increases = 0
     previous_int = 0
     current_int = 0
-    
-    #Change depths to ints
-    for i in range(len(depths)):
-        current_int = int (depths[i] + depths[i + 1] + depths[i + 2])
-        print(current_int)
+    number_of_inputs = len(depths)
 
-        if i > 0:
-            previous_int = int (depths[i - 1] + depths[i] + depths[i + 1])
-            print(previous_int)
-        
-      
-    
-
-
-
- # Day 1 part 1 code.  Useful info       
-        
-            
-   #depth_calculation = int(depth) - previous_element
-    #if depth_calculation > 0 and previous_element != 0:
-        #decreasing from the previous element
-    
-    #depth_increases += 1
-    #previous_element = int(depth)
+    for i in range(number_of_inputs):
+        if i < (number_of_inputs - 2):
+            current_int = int(depths[i]) + int(depths[i + 1]) + int(depths[i + 2])
+        if 0 < i < (number_of_inputs - 1):
+            previous_int = int(depths[i - 1]) + int(depths[i]) + int(depths[i + 1])
+        # Comparison Calculation
+        if current_int > previous_int & previous_int > 0:
+            depth_increases +=1
+    print(depth_increases)
