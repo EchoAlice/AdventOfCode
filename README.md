@@ -1,5 +1,4 @@
 # AdventOfCode
-Shoutout Leo!
 
 This is my repo of solutions to the challenges presented in Advent Of Code.
 Each day from December 1st to December 25th, Advent of Code presents you with
