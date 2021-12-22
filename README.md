@@ -7,7 +7,7 @@ Each day from December 1st to December 25th, Advent of Code presents you with
 Every problem has 2 parts.  I have a directory set up for each day of code.  
   Each day has an input, input test, part 1 solution, and part 2 solution file.
 
-Advent of Code is a great tool for me to learn and become a software engineer.
+Advent of Code is a great tool for me to learn and acquire skills to become a software engineer.
 Every problem I tackle is giving me more knowledge and understanding that I will
 use to create new and innovative things.  The goal is to build creative and useful tech
 in the blockchain/web3 world.
