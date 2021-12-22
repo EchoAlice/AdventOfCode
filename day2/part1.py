@@ -1,7 +1,7 @@
 if __name__ == "__main__":
     
     # Read text file into numbers within an array
-    with open("input.txt") as values:
+    with open("day2/part2/input.txt") as values:
         depths = values.readlines()
 
     # Iterate through all directional inputs
