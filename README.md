@@ -28,6 +28,7 @@ in the blockchain/web3 world.
 
 
 SHOUTOUT:
+
 Huge shoutout to my friend and SWE, Leo, for being a mentor and friend.  I can't
 thank you enough for facilitating growth and helping me chase my dreams!
 Thank you brother!
