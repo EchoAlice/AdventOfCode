@@ -16,13 +16,12 @@ if __name__ == "__main__":
         count_1 = 0
         for r in range(height): 
             # Calculates the number of times first bit of each number showed up
-            if int(binary_input[r][c]) == 0:                                   
-                count_0 = count_0 + 1 
-            if int(binary_input[r][c]) == 1:                
-                count_1 = count_1 + 1
+            count_0 += 1 if int(binary_input[r][c]) == 0 else count_0
+            count_1 += 1 if int(binary_input[r][c]) == 1 else count_1
         # Reworded logic
-        binary_input_gamma = binary_input_gamma + str(0) if count_0 > count_1 else binary_input_gamma + str(1) 
-        binary_input_epsilon = binary_input_epsilon + str(1) if count_0 > count_1 else binary_input_epsilon + str(0)
+        binary_input_gamma += str(0) if count_0 > count_1 else str(1)
+        binary_input_epsilon += str(1) if count_0 > count_1 else str(0)
+
     #Convert
     gamma_rate = int(binary_input_gamma, 2)
     epsilon_rate =  int(binary_input_epsilon, 2)
